@@ -1,5 +1,6 @@
 import { View } from "react-native";
-import InputForm from "@/components/molecules/InputForm";
+import personalImage = require("@/assets/images/personal-image.jpg")
+import Message from "@/components/molecules/Message";
 
 export default function Index() {
   return (
@@ -8,12 +9,14 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: 'column',
       }}
     >
-      <InputForm 
-        buttonText="this is a button" 
-        labelText="Hi this is a label"
-      />
+      <Message
+        myImage={personalImage}
+        myName='Timothy Lee'
+        birth='June 18'
+        gender='M' />
     </View>
   );
 }
