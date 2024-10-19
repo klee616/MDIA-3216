@@ -14,7 +14,7 @@ export default function Index() {
     >
       <Message
         myImage={personalImage}
-        myName='Timothy Lee'
+        myName='Timothy Lee Test'
         birth='June 18'
         gender='M' />
     </View>
